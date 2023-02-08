@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./build",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "es2018",
+    "declaration": true,
+    "strict": true
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}
