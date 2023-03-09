@@ -1,12 +1,16 @@
 {
+  "extends": "./tsconfig-google.json",
   "compilerOptions": {
-    "outDir": "./build",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "target": "es2018",
-    "declaration": true,
-    "strict": true
+    "rootDir": ".",
+    "outDir": "build",
+    "resolveJsonModule": true
   },
-  "include": ["."],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "test/fixtures/**/*.*",
+    "template/**/*.*",
+  ]
 }
